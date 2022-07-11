@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        let result;
+        let decision;
+
+        alert("Welcome to Rock Paper Scissors!");
+
+        
+        let playerSelection = prompt("Enter your move:");
+        
+
+        function computerPlay()
+        {
+            let arr = ["rock","paper","scissors"];
+
+            const guess = Math.floor(Math.random() * arr.length);
+
+            console.log(arr[guess]);
+
+            return (arr[guess]);
+        }
+
+        let computerSelection = computerPlay();
+
+        if(playerSelection == computerSelection)
+        {
+            decision = "tie";
+        }
+        else if(playerSelection == "rock" && computerSelection == "paper")
+        {
+            decision = "lose";
+        }
+        else if(playerSelection == "rock" && computerSelection == "scissors")
+        {
+            decision = "win";
+        }
+        else if(playerSelection == "paper" && computerSelection == "scissors")
+        {
+            decision = "lose";
+        }
+        else if(playerSelection == "paper" && computerSelection == "rock")
+        {
+            decision = "win";
+        }
+        else if(playerSelection == "scissors" && computerSelection == "rock")
+        {
+            decision = "lose";
+        }
+        else if(playerSelection == "scissors" && computerSelection == "paper")
+        {
+            decision = "win";
+        }
+
+        console.log(decision);
+
+        if(decision == "win")
+        {
+            result = "You won this round!";
+        }
+        else if(decision == "lose")
+        {
+            result =  "you lost this round :(";
+        }
+        else if(decision == "tie")
+        {
+            result = "It's a tie! How exciting!";
+        }
+        else
+        {
+            result = "something went wrong";
+        }
+
+        function playRound(playerSelection,computerSelection)
+        {
+            console.log(result);
+        }
+
+
+        playRound();
+
+    </script>
+
+
+</head>
+<body>
+    
+</body>
+</html>
