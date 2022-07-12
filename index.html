@@ -9,27 +9,18 @@
     <script>
         let result;
         let decision;
-
+        let computerSelection;
+        let playerSelection;
         alert("Welcome to Rock Paper Scissors!");
 
-        
-        let playerSelection = prompt("Enter your move:");
-        
 
-        function computerPlay()
+
+        for(i = 0; i<=5;i++)
         {
-            let arr = ["rock","paper","scissors"];
-
-            const guess = Math.floor(Math.random() * arr.length);
-
-            console.log(arr[guess]);
-
-            return (arr[guess]);
-        }
-
-        let computerSelection = computerPlay();
-
-        if(playerSelection == computerSelection)
+            computerPlay();
+            playerSelection = prompt("Enter your move");
+            computerSelection = computerPlay();
+            if(playerSelection == computerSelection)
         {
             decision = "tie";
         }
@@ -58,8 +49,6 @@
             decision = "win";
         }
 
-        console.log(decision);
-
         if(decision == "win")
         {
             result = "You won this round!";
@@ -77,13 +66,25 @@
             result = "something went wrong";
         }
 
+            playRound();
+
+        }
+        
+
+        function computerPlay()
+        {
+            let arr = ["rock","paper","scissors"];
+
+            const guess = Math.floor(Math.random() * arr.length);
+
+            return (arr[guess]);
+        }
+
         function playRound(playerSelection,computerSelection)
         {
             console.log(result);
+            return result;
         }
-
-
-        playRound();
 
     </script>
 
