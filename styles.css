@@ -1,5 +1,5 @@
 .background-image{
-    background-image: url(./img/925523.jpg);
+    background-image: url(https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg);
     height:100vh;
     background-size: cover;
     background-repeat: no-repeat;
@@ -13,6 +13,17 @@
     /* position: absolute; */
     top:0;
     left:0;
+}
+
+.filter-blur
+{
+    backdrop-filter: blur(10px);
+    -moz-filter   : blur(10px);
+    -webkit-filter: blur(10px);
+    -o-filter     : blur(10px);
+    position: absolute;
+    z-index: 1;
+    height:100%;
 }
 
 *{

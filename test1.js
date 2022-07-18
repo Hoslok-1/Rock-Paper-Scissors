@@ -17,27 +17,32 @@ function getComputerChoice()
 //           console.log(playRound(playerSelection,computerSelection));
 //      }
 // }
-let count = 0;
+
 
 
 let selectRock = document.getElementById('selectRock');
-selectRock.addEventListener('click',function(){
-     count++;
-     console.log(playRound('rock',getComputerChoice()));
-});
+selectRock.addEventListener('click',ro);
+
+function ro()
+{
+     document.getElementById('result').textContent = playRound('rock',getComputerChoice());
+}
 
 let selectPaper = document.getElementById('selectPaper');
-selectPaper.addEventListener('click',function(){
-     count++;
-     console.log(playRound('paper',getComputerChoice()));
-});
+selectPaper.addEventListener('click',pa);
+
+function pa()
+{
+     document.getElementById('result').textContent = playRound('paper',getComputerChoice());
+}
 
 let selectScissors = document.getElementById('selectScissors');
-selectScissors.addEventListener('click',function(){
-     count++;
-     console.log(playRound('scissors',getComputerChoice()));
-});
+selectScissors.addEventListener('click',sc);
 
+function sc()
+{
+     document.getElementById('result').textContent = playRound('scissors',getComputerChoice());
+}
 
 function playRound(playerSelection,computerSelection)
 {
