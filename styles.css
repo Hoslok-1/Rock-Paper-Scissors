@@ -1,32 +1,52 @@
 .background-image{
-    background-image: url(https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg);
+    background-image: url(/img/925523.jpg);
     height:100vh;
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
     top:0;
     left:0;
-}
-
-.uimage
-{
-    /* position: absolute; */
-    top:0;
-    left:0;
+    backdrop-filter: blur(5px);
 }
 
 .filter-blur
 {
-    backdrop-filter: blur(10px);
-    -moz-filter   : blur(10px);
-    -webkit-filter: blur(10px);
-    -o-filter     : blur(10px);
-    position: absolute;
-    z-index: 1;
-    height:100%;
+    filter: blur(5px);
+    -moz-filter   : blur(5px);
+    -webkit-filter: blur(5px);
+    -o-filter     : blur(5px);
 }
 
 *{
     margin:0;
     padding:0;
+}
+
+.main-textbox
+{
+    position: absolute;
+    font-size: 30px;
+    text-align: center;
+    top:15%;
+    width: 45%;
+    height:300px;
+    border : 10px solid rgb(161, 199, 95);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    flex-wrap: wrap;
+    background-color: rgb(124, 105, 82);
+    display:flex;
+    max-width: 45%;
+}
+
+.inner-container
+{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    align-content: center;
+}
+
+.header-text
+{
+    margin-left: 350px;
 }
