@@ -18,7 +18,7 @@ function getComputerChoice()
 //      }
 // }
 
-
+count = 0;
 
 let selectRock = document.getElementById('selectRock');
 selectRock.addEventListener('click',ro);
@@ -26,6 +26,7 @@ selectRock.addEventListener('click',ro);
 function ro()
 {
      document.getElementById('result').textContent = playRound('rock',getComputerChoice());
+     
 }
 
 let selectPaper = document.getElementById('selectPaper');
@@ -34,6 +35,7 @@ selectPaper.addEventListener('click',pa);
 function pa()
 {
      document.getElementById('result').textContent = playRound('paper',getComputerChoice());
+     
 }
 
 let selectScissors = document.getElementById('selectScissors');
@@ -42,7 +44,12 @@ selectScissors.addEventListener('click',sc);
 function sc()
 {
      document.getElementById('result').textContent = playRound('scissors',getComputerChoice());
+     
 }
+
+
+
+
 
 function playRound(playerSelection,computerSelection)
 {
@@ -61,7 +68,7 @@ function playRound(playerSelection,computerSelection)
      }
      else if(playerSelection == 'paper' && computerSelection == 'rock')
      {
-          decision = 'You won!!';
+          decision = 'You won!!!';
      }
      else if(playerSelection == 'paper' && computerSelection == 'paper')
      {
@@ -86,6 +93,19 @@ function playRound(playerSelection,computerSelection)
      else 
      {
           decision = 'something went wrong';
+     }
+
+     if(decision == 'You won!!!');
+     {
+          let lScore = document.getElementById('something1');
+          count++;
+          lScore.textContent = count;
+     }
+      if(decision == 'You lost :(')
+     {
+          let rScore = document.getElementById('something2');
+          count++;
+          rScore.textContent = count;
      }
 
      return decision;
