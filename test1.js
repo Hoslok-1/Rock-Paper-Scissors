@@ -18,7 +18,9 @@ function getComputerChoice()
 //      }
 // }
 
-count = 0;
+lcount = 0;
+rcount = 0;
+
 
 let selectRock = document.getElementById('selectRock');
 selectRock.addEventListener('click',ro);
@@ -51,16 +53,17 @@ function sc()
 
 
 
+
 function playRound(playerSelection,computerSelection)
 {
      
      if(playerSelection == 'rock' && computerSelection == 'rock')
      {
-          decision = 'Its a tie! Go again.';
+          decision = 'Its a tie, go again!';
      }
      else if(playerSelection == 'rock' && computerSelection == 'paper')
      {
-          decision = 'You lost :(';
+          decision = 'You lost';
      }
      else if(playerSelection == 'rock' && computerSelection == 'scissors')
      {
@@ -76,11 +79,11 @@ function playRound(playerSelection,computerSelection)
      }
      else if(playerSelection == 'paper' && computerSelection == 'scissors')
      {
-          decision = 'You lost :(';
+          decision = 'You lost';
      }
      else if(playerSelection == 'scissors' && computerSelection == 'rock')
      {
-          decision = 'You lost :(';
+          decision = 'You lost';
      }
      else if(playerSelection == 'scissors' && computerSelection == 'paper')
      {
@@ -95,18 +98,43 @@ function playRound(playerSelection,computerSelection)
           decision = 'something went wrong';
      }
 
-     if(decision == 'You won!!!');
-     {
-          let lScore = document.getElementById('something1');
-          count++;
-          lScore.textContent = count;
-     }
-      if(decision == 'You lost :(')
+     if(decision == 'You lost')
      {
           let rScore = document.getElementById('something2');
-          count++;
-          rScore.textContent = count;
+          rcount++;
+          rScore.textContent = rcount;
+     }
+     else if(decision == 'You won!!!')
+     {
+          let lScore = document.getElementById('something1');
+          lcount++;
+          lScore.textContent = lcount;
+     }
+     else if(decision == 'Its a tie, go again!')
+     {
+          lcount = lcount;
+          rcount = rcount;
      }
 
+     if(rcount == 5)
+     {
+          lcount = 0;
+          rcount = 0;
+          let lScore = document.getElementById('something1');
+          lScore.textContent = 0;
+          let rScore = document.getElementById('something2');
+          rScore.textContent = 0;
+          decision = "YOU LOST THE GAME";
+     }
+     else if(lcount == 5)
+     {
+          lcount = 0;
+          rcount = 0;
+          let lScore = document.getElementById('something1');
+          lScore.textContent = 0;
+          let rScore = document.getElementById('something2');
+          rScore.textContent = 0;
+          decision = "YOU WON THE GAME";
+     }
      return decision;
 }

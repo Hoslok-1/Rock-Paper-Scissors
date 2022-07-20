@@ -6,16 +6,16 @@
     position: relative;
     top:0;
     left:0;
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(0px);
 }
 
-/* .filter-blur
+.filter-blur
 {
-    filter: blur(5px);
-    -moz-filter   : blur(5px);
-    -webkit-filter: blur(5px);
-    -o-filter     : blur(5px);
-} */
+    filter: blur(0px);
+    -moz-filter   : blur(0px);
+    -webkit-filter: blur(0px);
+    -o-filter     : blur(0px);
+}
 
 *{
     margin:0;
@@ -27,12 +27,12 @@
     position: absolute;
     font-size: 30px;
     top:15%;
-    width: 45%;
+    width: 35%;
     height:600px;
-    border : 10px solid rgb(161, 199, 95);
+    border : 10px solid gold;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     flex-wrap: wrap;
-    background-color: rgb(124, 105, 82);
+    background-color: honeydew;
     display:flex;
     flex-direction: column;
     max-width: 45%;
@@ -63,3 +63,11 @@
 {
     display: flex;
 }
+#selectRock{   align-items: center;   background-color: #fff;   border: 2px solid #000;   box-sizing: border-box;   color: #000;   cursor: pointer;   display: inline-flex;   fill: #000;   font-family: Inter,sans-serif;   font-size: 16px;   font-weight: 600;   height: 48px;   justify-content: center;   letter-spacing: -.8px;   line-height: 24px;   min-width: 140px;   outline: 0;   padding: 0 17px;   text-align: center;   text-decoration: none;   transition: all .3s;   user-select: none;   -webkit-user-select: none;   touch-action: manipulation; }  #selectRock:focus {   color: #171e29; }  #selectRock:hover {   border-color: #06f;   color: #06f;   fill: #06f; } 
+#selectRock:active {   border-color: #06f;   color: #06f;   fill: #06f; }  @media (min-width: 768px) {   #selectRock {     min-width: 170px;   } }
+
+#selectPaper{   align-items: center;   background-color: #fff;   border: 2px solid #000;   box-sizing: border-box;   color: #000;   cursor: pointer;   display: inline-flex;   fill: #000;   font-family: Inter,sans-serif;   font-size: 16px;   font-weight: 600;   height: 48px;   justify-content: center;   letter-spacing: -.8px;   line-height: 24px;   min-width: 140px;   outline: 0;   padding: 0 17px;   text-align: center;   text-decoration: none;   transition: all .3s;   user-select: none;   -webkit-user-select: none;   touch-action: manipulation; }  #selectPaper:focus {   color: #171e29; } #selectPaper:hover {   border-color: #06f;   color: #06f;   fill: #06f; } 
+#selectPaper:active {   border-color: #06f;   color: #06f;   fill: #06f; }  @media (min-width: 768px) {   #selectPaper {     min-width: 170px;   } }
+
+#selectScissors{   align-items: center;   background-color: #fff;   border: 2px solid #000;   box-sizing: border-box;   color: #000;   cursor: pointer;   display: inline-flex;   fill: #000;   font-family: Inter,sans-serif;   font-size: 16px;   font-weight: 600;   height: 48px;   justify-content: center;   letter-spacing: -.8px;   line-height: 24px;   min-width: 140px;   outline: 0;   padding: 0 17px;   text-align: center;   text-decoration: none;   transition: all .3s;   user-select: none;   -webkit-user-select: none;   touch-action: manipulation; }  #selectScissors:focus {   color: #171e29; }  #selectScissors:hover {   border-color: #06f;   color: #06f;   fill: #06f; } 
+#selectScissors:active {   border-color: #06f;   color: #06f;   fill: #06f; }  @media (min-width: 768px) {   #selectScissors {     min-width: 170px;   } }
