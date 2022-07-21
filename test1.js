@@ -7,16 +7,6 @@ function getComputerChoice()
     
 }
 
-// function game()
-// {
-//      for(i = 0;i<5;i++)
-//      {
-//           playerSelection = 'rock';
-//           getComputerChoice();
-//           computerSelection = getComputerChoice();
-//           console.log(playRound(playerSelection,computerSelection));
-//      }
-// }
 
 lcount = 0;
 rcount = 0;

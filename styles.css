@@ -1,5 +1,5 @@
 .background-image{
-    background-color: cadetblue;
+    background-color: rgb(135, 223, 226);
     height:100vh;
     background-size: cover;
     background-repeat: no-repeat;
@@ -23,7 +23,7 @@
     height:600px;
     border : 10px solid #4E4E50;
     flex-wrap: wrap;
-    background-color: #3cddd2;
+    background-color: honeydew;
     display:flex;
     flex-direction: column;
     max-width: 35%;
