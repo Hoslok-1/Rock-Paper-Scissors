@@ -124,7 +124,7 @@ function playRound(playerSelection,computerSelection)
           lScore.textContent = 0;
           let rScore = document.getElementById('something2');
           rScore.textContent = 0;
-          decision = "YOU LOST THE GAME";
+          decision = "YOU LOST THE GAME :(";
      }
      else if(lcount == 5)
      {
@@ -134,7 +134,7 @@ function playRound(playerSelection,computerSelection)
           lScore.textContent = 0;
           let rScore = document.getElementById('something2');
           rScore.textContent = 0;
-          decision = "YOU WON THE GAME";
+          decision = "YOU WON THE GAME!!WHOOO";
      }
      return decision;
 }
